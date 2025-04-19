@@ -1,5 +1,5 @@
 FROM node:22-slim
-RUN npx -y playwright@1.51.1 install --with-deps chrome
+RUN npx -y playwright@1.51.1 install --with-deps
 RUN adduser pwuser
 USER pwuser
 ENTRYPOINT ["npx"]
